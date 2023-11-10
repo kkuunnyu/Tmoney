@@ -432,6 +432,10 @@ td {
   font-weight: 500;
 }
 
+.inner-table > tr,td{
+  padding: 13px;
+}
+
 .inner-table th:not(:last-child),
 .inner-table td:not(:last-child) {
   border-right: var(--border);
