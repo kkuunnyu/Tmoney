@@ -115,6 +115,46 @@
           </ul>
         </div>
       </nav>
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <input type="checkbox">
+        <div class="hamburgerlines">
+            <span class="lines line1">
+  
+            </span>
+            <span class="lines line2">
+  
+            </span>
+            <span class="lines line3">
+  
+            </span>
+        </div>
+        <ul class="menu-items">
+            <li class="hamburger-li"><a href="/index.html">서버 모니터링</a>
+            </li>
+            <li class="hamburger-li"><a href="#">APP관리</a>
+            <ul class="menu-items-inner">
+              <li><a href="/accident.html">&nbsp;&nbsp;&nbsp;- 사고 접수 관리</a></li>
+              <li><a href="/faq.html">&nbsp;&nbsp;&nbsp;- FAQ 관리</a></li>
+              <li><a href="/notice.html">&nbsp;&nbsp;&nbsp;- 공지사항 관리</a></li>
+              <li><a href="/version.html">&nbsp;&nbsp;&nbsp;- 버전 관리</a></li>
+              <li><a href="/terms.html">&nbsp;&nbsp;&nbsp;- 약관 관리</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">데이터 분석</a>
+            <ul class="menu-items-inner">
+              <li><a href="/drive-result.html">&nbsp;&nbsp;&nbsp;- 운행 결과</a></li>
+              <li><a href="/drive-list.html">&nbsp;&nbsp;&nbsp;- 운수사 목록</a></li>
+              <li><a href="/interval.html">&nbsp;&nbsp;&nbsp;- 배차 목록</a></li>
+              <li><a href="/departure-arrival.html">&nbsp;&nbsp;&nbsp;- 출/도착지 목록 정보</a></li>
+              <li><a href="/terminal.html">&nbsp;&nbsp;&nbsp;- 터미널/경유지 정보</a></li>
+              <li><a href="/batch.html">&nbsp;&nbsp;&nbsp;- Batch 결과 조회</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">관리자 관리</a>
+            </li>
+        </ul>
+    </div>
     </header>
     <!-- ============================================================== -->
     <!-- End Topbar header -->
@@ -155,6 +195,11 @@
                   <a href="version.html"
                     class="sidebar-link sub-menu"><span
                     class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;버전 관리</span></a>
+                </li>
+                <li class="sidebar-item submenu">
+                  <a href="terms.html"
+                    class="sidebar-link sub-menu"><span
+                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;약관 관리</span></a>
                 </li>
               </ul>
             </li>
@@ -232,51 +277,58 @@
               <td bgcolor="#f0f0f0">버전</td>
               <td width="15%" bgcolor="#f0f0f0">플랫폼</td>
               <td width="15%" bgcolor="#f0f0f0">업데이트 날짜</td>
-              <td bgcolor="#f0f0f0">상세내용</td>
+              <td bgcolor="#f0f0f0" class="skip">상세내용</td>
             </tr>
             <tr class="details" onClick="location.href='version-inner.html'">
               <td>6</td>
               <td>V1.1.0</a></td>
               <td>Android/iOS</td>
               <td>2023-05-23</td>
-              <td>내용을 입력하세요</td>
+              <td class="skip">내용을 입력하세요</td>
             </tr>
             <tr>
               <td>5</td>
               <td>V1.0.5</td>
               <td>Android/iOS</td>
               <td>2023-05-27</td>
-              <td>내용을 입력하세요</td>
+              <td class="skip">내용을 입력하세요</td>
             </tr>
             <tr>
               <td>4</td>
               <td>V1.0.4</td>
               <td>Android/iOS</td>
               <td>2023-06-11</td>
-              <td>내용을 입력하세요</td>
+              <td class="skip">내용을 입력하세요</td>
             </tr>
             <tr>
               <td>3</td>
               <td>V1.0.3</td>
               <td>Android/iOS</td>
               <td>2023-08-12</td>
-              <td>내용을 입력하세요</td>
+              <td class="skip">내용을 입력하세요</td>
             </tr>
             <tr>
               <td>2</td>
               <td>V1.0.2</td>
               <td>Android/iOS</td>
               <td>2023-09-11</td>
-              <td>내용을 입력하세요</td>
+              <td class="skip">내용을 입력하세요</td>
             </tr>
             <tr>
               <td>1</td>
               <td>V1.0.1</td>
               <td>Android/iOs</td>
               <td>2023-05-23</td>
-              <td>내용을 입력하세요</td>
+              <td class="skip">내용을 입력하세요</td>
             </tr>
           </table>
+          <div class="checkbox2">
+            <ul class="check-button">
+              <li><a href="#">업데이트 확인</a></li>
+              <li><a href="/version-register.html">등록</a></li>
+            </ul>
+          </div>
+          <div class="pagination-out">
           <div class="pagination">
             <button class="btn-nav left-btn">
               <img src="../assets/images/prev.png" alt="prev">
@@ -294,6 +346,7 @@
               <img src="../assets/images/next.png" alt="next">
             </button>
           </div>
+        </div>
         </div>
       </div>
       <!-- ============================================================== -->
@@ -334,36 +387,6 @@
   <!-- this page js -->
   <script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
   <script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script>
-    // Basic Example with form
-    var form = $("#example-form");
-    form.validate({
-      errorPlacement: function errorPlacement(error, element) {
-        element.before(error);
-      },
-      rules: {
-        confirm: {
-          equalTo: "#password",
-        },
-      },
-    });
-    form.children("div").steps({
-      headerTag: "h3",
-      bodyTag: "section",
-      transitionEffect: "slideLeft",
-      onStepChanging: function (event, currentIndex, newIndex) {
-        form.validate().settings.ignore = ":disabled,:hidden";
-        return form.valid();
-      },
-      onFinishing: function (event, currentIndex) {
-        form.validate().settings.ignore = ":disabled";
-        return form.valid();
-      },
-      onFinished: function (event, currentIndex) {
-        alert("Submitted!");
-      },
-    });
-  </script>
 </body>
 
 </html>

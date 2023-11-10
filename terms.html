@@ -15,11 +15,8 @@
   <!-- Favicon icon -->
   <link rel="shortcut icon" href="/assets/images/tmoney_logo.ico">
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="../assets/libs/select2/dist/css/select2.min.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/libs/jquery-minicolors/jquery.minicolors.css" />
-  <link rel="stylesheet" type="text/css"
-    href="../assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/libs/quill/dist/quill.snow.css" />
+  <link href="../assets/libs/jquery-steps/jquery.steps.css" rel="stylesheet" />
+  <link href="../assets/libs/jquery-steps/steps.css" rel="stylesheet" />
   <link href="../dist/css/style.min.css" rel="stylesheet" />
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -106,7 +103,8 @@
                     waves-effect waves-dark
                     pro-pic
                   " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <a class="user-id" href="#">통합관리자1</a><a class="logout" href="./login.html">로그아웃</a>
+                <a
+                  class="user-id" href="#">통합관리자1</a><a class="logout" href="./login.html">로그아웃</a>
               </a>
               <ul class="dropdown-menu dropdown-menu-end user-dd animated" aria-labelledby="navbarDropdown">
 
@@ -118,6 +116,46 @@
           </ul>
         </div>
       </nav>
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <input type="checkbox">
+        <div class="hamburgerlines">
+            <span class="lines line1">
+  
+            </span>
+            <span class="lines line2">
+  
+            </span>
+            <span class="lines line3">
+  
+            </span>
+        </div>
+        <ul class="menu-items">
+            <li class="hamburger-li"><a href="/index.html">서버 모니터링</a>
+            </li>
+            <li class="hamburger-li"><a href="#">APP관리</a>
+            <ul class="menu-items-inner">
+              <li><a href="/accident.html">&nbsp;&nbsp;&nbsp;- 사고 접수 관리</a></li>
+              <li><a href="/faq.html">&nbsp;&nbsp;&nbsp;- FAQ 관리</a></li>
+              <li><a href="/notice.html">&nbsp;&nbsp;&nbsp;- 공지사항 관리</a></li>
+              <li><a href="/version.html">&nbsp;&nbsp;&nbsp;- 버전 관리</a></li>
+              <li><a href="/terms.html">&nbsp;&nbsp;&nbsp;- 약관 관리</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">데이터 분석</a>
+            <ul class="menu-items-inner">
+              <li><a href="/drive-result.html">&nbsp;&nbsp;&nbsp;- 운행 결과</a></li>
+              <li><a href="/drive-list.html">&nbsp;&nbsp;&nbsp;- 운수사 목록</a></li>
+              <li><a href="/interval.html">&nbsp;&nbsp;&nbsp;- 배차 목록</a></li>
+              <li><a href="/departure-arrival.html">&nbsp;&nbsp;&nbsp;- 출/도착지 목록 정보</a></li>
+              <li><a href="/terminal.html">&nbsp;&nbsp;&nbsp;- 터미널/경유지 정보</a></li>
+              <li><a href="/batch.html">&nbsp;&nbsp;&nbsp;- Batch 결과 조회</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">관리자 관리</a>
+            </li>
+        </ul>
+    </div>
     </header>
     <!-- ============================================================== -->
     <!-- End Topbar header -->
@@ -158,6 +196,11 @@
                   <a href="version.html"
                     class="sidebar-link sub-menu"><span
                     class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;버전 관리</span></a>
+                </li>
+                <li class="sidebar-item submenu">
+                  <a href="terms.html"
+                    class="sidebar-link sub-menu"><span
+                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;약관 관리</span></a>
                 </li>
               </ul>
             </li>
@@ -220,16 +263,6 @@
         <div class="row">
           <div class="col-12 d-flex no-block align-items-center">
             <h4 class="page-title">APP 관리</h4>
-            <div class="ms-auto text-end">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Library
-                  </li>
-                </ol>
-              </nav>
-            </div>
           </div>
         </div>
       </div>
@@ -241,7 +274,84 @@
       <!-- ============================================================== -->
       <div class="container-fluid">
         <div class="white-box">
-          <div id="edit"></div>
+          <div class="status">
+            <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;약관 관리
+          </div>
+          <table class="inner-table">
+            <tr>
+              <td bgcolor="#f0f0f0">NO</td>
+              <td bgcolor="#f0f0f0">카테고리</td>
+              <td bgcolor="#f0f0f0">제목</td>
+              <td bgcolor="#f0f0f0" class="skip">내용</td>
+              <td bgcolor="#f0f0f0">등록일자</td>
+            </tr>
+            <tr class="details" onClick="location.href='terms-inner.html'">
+              <td>1</td>
+              <td>약관</td>
+              <td>약관 관리</td>
+              <td class="skip">1조 1항</td>
+              <td>2023-07-05</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>업데이트</td>
+              <td>지능형 앱 단말기 업데이트 공지</td>
+              <td class="skip"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td></td>
+              <td></td>
+              <td class="skip"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td></td>
+              <td></td>
+              <td class="skip"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td></td>
+              <td></td>
+              <td class="skip"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td></td>
+              <td></td>
+              <td class="skip"></td>
+              <td></td>
+            </tr>
+          </table>
+          <div class="checkbox2">
+            <ul class="check-button">
+              <li><a href="/terms-register.html">등록</a></li>
+            </ul>
+          </div>
+          <div class="pagination-out">
+          <div class="pagination">
+            <button class="btn-nav left-btn">
+              <img src="../assets/images/prev.png" alt="prev">
+            </button>
+            <div class="page-numbers">
+              <button class="btn-page btn-selected">1</button>
+              <button class="btn-page">2</button>
+              <button class="btn-page">3</button>
+              <button class="btn-page">4</button>
+              <button class="btn-page">5</button>
+              <span class="dots">...</span>
+              <button class="btn-page">99</button>
+            </div>
+            <button class="btn-nav right-btn">
+              <img src="../assets/images/next.png" alt="next">
+            </button>
+          </div>
+        </div>
         </div>
       </div>
       <!-- ============================================================== -->
@@ -279,69 +389,9 @@
   <script src="../dist/js/sidebarmenu.js"></script>
   <!--Custom JavaScript -->
   <script src="../dist/js/custom.min.js"></script>
-  <!-- This Page JS -->
-  <script src="../assets/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
-  <script src="../dist/js/pages/mask/mask.init.js"></script>
-  <script src="../assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="../assets/libs/select2/dist/js/select2.min.js"></script>
-  <script src="../assets/libs/jquery-asColor/dist/jquery-asColor.min.js"></script>
-  <script src="../assets/libs/jquery-asGradient/dist/jquery-asGradient.js"></script>
-  <script src="../assets/libs/jquery-asColorPicker/dist/jquery-asColorPicker.min.js"></script>
-  <script src="../assets/libs/jquery-minicolors/jquery.minicolors.min.js"></script>
-  <script src="../assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-  <script src="../assets/libs/quill/dist/quill.min.js"></script>
-  <script>
-    //***********************************//
-    // For select 2
-    //***********************************//
-    $(".select2").select2();
-
-    /*colorpicker*/
-    $(".demo").each(function () {
-      //
-      // Dear reader, it's actually very easy to initialize MiniColors. For example:
-      //
-      //  $(selector).minicolors();
-      //
-      // The way I've done it below is just for the demo, so don't get confused
-      // by it. Also, data- attributes aren't supported at this time...they're
-      // only used for this demo.
-      //
-      $(this).minicolors({
-        control: $(this).attr("data-control") || "hue",
-        position: $(this).attr("data-position") || "bottom left",
-
-        change: function (value, opacity) {
-          if (!value) return;
-          if (opacity) value += ", " + opacity;
-          if (typeof console === "object") {
-            console.log(value);
-          }
-        },
-        theme: "bootstrap",
-      });
-    });
-    /*datwpicker*/
-    jQuery(".mydatepicker").datepicker();
-    jQuery("#datepicker-autoclose").datepicker({
-      autoclose: true,
-      todayHighlight: true,
-    });
-    var quill = new Quill("#editor", {
-      theme: "snow",
-    });
-  </script>
-  <script>
-    async function fetchHtmlAsText(url) {
-      return await (await fetch(url)).text();
-    }
-
-    async function importPage(target) {
-      document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
-    }
-
-    importPage('edit')
-  </script>
+  <!-- this page js -->
+  <script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
+  <script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
 </body>
 
 </html>

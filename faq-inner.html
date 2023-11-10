@@ -116,6 +116,46 @@
           </ul>
         </div>
       </nav>
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <input type="checkbox">
+        <div class="hamburgerlines">
+            <span class="lines line1">
+  
+            </span>
+            <span class="lines line2">
+  
+            </span>
+            <span class="lines line3">
+  
+            </span>
+        </div>
+        <ul class="menu-items">
+            <li class="hamburger-li"><a href="/index.html">서버 모니터링</a>
+            </li>
+            <li class="hamburger-li"><a href="#">APP관리</a>
+            <ul class="menu-items-inner">
+              <li><a href="/accident.html">&nbsp;&nbsp;&nbsp;- 사고 접수 관리</a></li>
+              <li><a href="/faq.html">&nbsp;&nbsp;&nbsp;- FAQ 관리</a></li>
+              <li><a href="/notice.html">&nbsp;&nbsp;&nbsp;- 공지사항 관리</a></li>
+              <li><a href="/version.html">&nbsp;&nbsp;&nbsp;- 버전 관리</a></li>
+              <li><a href="/terms.html">&nbsp;&nbsp;&nbsp;- 약관 관리</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">데이터 분석</a>
+            <ul class="menu-items-inner">
+              <li><a href="/drive-result.html">&nbsp;&nbsp;&nbsp;- 운행 결과</a></li>
+              <li><a href="/drive-list.html">&nbsp;&nbsp;&nbsp;- 운수사 목록</a></li>
+              <li><a href="/interval.html">&nbsp;&nbsp;&nbsp;- 배차 목록</a></li>
+              <li><a href="/departure-arrival.html">&nbsp;&nbsp;&nbsp;- 출/도착지 목록 정보</a></li>
+              <li><a href="/terminal.html">&nbsp;&nbsp;&nbsp;- 터미널/경유지 정보</a></li>
+              <li><a href="/batch.html">&nbsp;&nbsp;&nbsp;- Batch 결과 조회</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">관리자 관리</a>
+            </li>
+        </ul>
+    </div>
     </header>
     <!-- ============================================================== -->
     <!-- End Topbar header -->
@@ -156,6 +196,11 @@
                   <a href="version.html"
                     class="sidebar-link sub-menu"><span
                     class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;버전 관리</span></a>
+                </li>
+                <li class="sidebar-item submenu">
+                  <a href="terms.html"
+                    class="sidebar-link sub-menu"><span
+                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;약관 관리</span></a>
                 </li>
               </ul>
             </li>
@@ -232,18 +277,19 @@
       <div class="container-fluid">
         <div class="white-box">
           <div class="status">
-            <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;FAQ 관리
+            <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;FAQ 관리 - 상세 조회
           </div>
-          <h5>앱 오류</h5>
-          <h3 class="title-text2">카메라 작동이 안돼요</h3>
+          <span class="category-text">[앱 오류]</span>
+          <span class="title-text2">카메라 작동이 안돼요</span>
+          <span class="text-time">2023-11-10</span>
           <div class="text-box2">
-            카메라 작동이 안돼요
-            해결책 부탁드립니다.
+            갑자기 카메라가 작동이 안됩니다. 어떻게 하나요?
           </div>
           <div class="checkbox2">
             <ul class="check-button">
-              <li><a class="edit" href="./faq-inner2.html">수정</a></li>
+              <li><a href="#">확인</a></li>
               <li><a href="#">삭제</a></li>
+              <li><a class="edit" href="./faq-inner2.html">수정</a></li>
             </ul>
           </div>
         </div>

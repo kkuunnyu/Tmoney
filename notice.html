@@ -116,6 +116,46 @@
           </ul>
         </div>
       </nav>
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <input type="checkbox">
+        <div class="hamburgerlines">
+            <span class="lines line1">
+  
+            </span>
+            <span class="lines line2">
+  
+            </span>
+            <span class="lines line3">
+  
+            </span>
+        </div>
+        <ul class="menu-items">
+            <li class="hamburger-li"><a href="/index.html">서버 모니터링</a>
+            </li>
+            <li class="hamburger-li"><a href="#">APP관리</a>
+            <ul class="menu-items-inner">
+              <li><a href="/accident.html">&nbsp;&nbsp;&nbsp;- 사고 접수 관리</a></li>
+              <li><a href="/faq.html">&nbsp;&nbsp;&nbsp;- FAQ 관리</a></li>
+              <li><a href="/notice.html">&nbsp;&nbsp;&nbsp;- 공지사항 관리</a></li>
+              <li><a href="/version.html">&nbsp;&nbsp;&nbsp;- 버전 관리</a></li>
+              <li><a href="/terms.html">&nbsp;&nbsp;&nbsp;- 약관 관리</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">데이터 분석</a>
+            <ul class="menu-items-inner">
+              <li><a href="/drive-result.html">&nbsp;&nbsp;&nbsp;- 운행 결과</a></li>
+              <li><a href="/drive-list.html">&nbsp;&nbsp;&nbsp;- 운수사 목록</a></li>
+              <li><a href="/interval.html">&nbsp;&nbsp;&nbsp;- 배차 목록</a></li>
+              <li><a href="/departure-arrival.html">&nbsp;&nbsp;&nbsp;- 출/도착지 목록 정보</a></li>
+              <li><a href="/terminal.html">&nbsp;&nbsp;&nbsp;- 터미널/경유지 정보</a></li>
+              <li><a href="/batch.html">&nbsp;&nbsp;&nbsp;- Batch 결과 조회</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">관리자 관리</a>
+            </li>
+        </ul>
+    </div>
     </header>
     <!-- ============================================================== -->
     <!-- End Topbar header -->
@@ -156,6 +196,11 @@
                   <a href="version.html"
                     class="sidebar-link sub-menu"><span
                     class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;버전 관리</span></a>
+                </li>
+                <li class="sidebar-item submenu">
+                  <a href="terms.html"
+                    class="sidebar-link sub-menu"><span
+                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;약관 관리</span></a>
                 </li>
               </ul>
             </li>
@@ -241,54 +286,60 @@
           <table class="inner-table">
             <tr>
               <td bgcolor="#f0f0f0">NO</td>
-              <td bgcolor="#f0f0f0">카테고리</td>
+              <td bgcolor="#f0f0f0" width="10%">카테고리</td>
               <td bgcolor="#f0f0f0">제목</td>
-              <td bgcolor="#f0f0f0">내용</td>
+              <td bgcolor="#f0f0f0" class="skip">내용</td>
               <td bgcolor="#f0f0f0">등록일자</td>
             </tr>
             <tr class="details" onClick="location.href='notice-inner.html'">
               <td>1</td>
               <td>긴급</td>
               <td>제천IC 부근 차량사고 발생</td>
-              <td>충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량이 도로 노측용 가드레일과 충돌 </td>
+              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
               <td>2023-07-05</td>
             </tr>
             <tr>
               <td>2</td>
               <td>업데이트</td>
               <td>지능형 앱 단말기 업데이트 공지</td>
-              <td>충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량이 도로 노측용 가드레일과 충돌</td>
+              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
               <td></td>
             </tr>
             <tr>
               <td>3</td>
               <td></td>
               <td></td>
-              <td>충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량이 도로 노측용 가드레일과 충돌</td>
+              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
               <td></td>
             </tr>
             <tr>
               <td>4</td>
               <td></td>
               <td></td>
-              <td>충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량이 도로 노측용 가드레일과 충돌</td>
+              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
               <td></td>
             </tr>
             <tr>
               <td>5</td>
               <td></td>
               <td></td>
-              <td>충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량이 도로 노측용 가드레일과 충돌</td>
+              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
               <td></td>
             </tr>
             <tr>
               <td>6</td>
               <td></td>
               <td></td>
-              <td>충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량이 도로 노측용 가드레일과 충돌</td>
+              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
               <td></td>
             </tr>
           </table>
+          <div class="checkbox2">
+            <ul class="check-button">
+              <li><a href="/notice-register.html">등록</a></li>
+            </ul>
+          </div>
+          <div class="pagination-out">
           <div class="pagination">
             <button class="btn-nav left-btn">
               <img src="../assets/images/prev.png" alt="prev">
@@ -306,6 +357,7 @@
               <img src="../assets/images/next.png" alt="next">
             </button>
           </div>
+        </div>
         </div>
       </div>
       <!-- ============================================================== -->
@@ -346,36 +398,6 @@
   <!-- this page js -->
   <script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
   <script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script>
-    // Basic Example with form
-    var form = $("#example-form");
-    form.validate({
-      errorPlacement: function errorPlacement(error, element) {
-        element.before(error);
-      },
-      rules: {
-        confirm: {
-          equalTo: "#password",
-        },
-      },
-    });
-    form.children("div").steps({
-      headerTag: "h3",
-      bodyTag: "section",
-      transitionEffect: "slideLeft",
-      onStepChanging: function (event, currentIndex, newIndex) {
-        form.validate().settings.ignore = ":disabled,:hidden";
-        return form.valid();
-      },
-      onFinishing: function (event, currentIndex) {
-        form.validate().settings.ignore = ":disabled";
-        return form.valid();
-      },
-      onFinished: function (event, currentIndex) {
-        alert("Submitted!");
-      },
-    });
-  </script>
 </body>
 
 </html>

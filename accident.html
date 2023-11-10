@@ -117,6 +117,46 @@
           </ul>
         </div>
       </nav>
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <input type="checkbox">
+        <div class="hamburgerlines">
+            <span class="lines line1">
+  
+            </span>
+            <span class="lines line2">
+  
+            </span>
+            <span class="lines line3">
+  
+            </span>
+        </div>
+        <ul class="menu-items">
+            <li class="hamburger-li"><a href="/index.html">서버 모니터링</a>
+            </li>
+            <li class="hamburger-li"><a href="#">APP관리</a>
+            <ul class="menu-items-inner">
+              <li><a href="/accident.html">&nbsp;&nbsp;&nbsp;- 사고 접수 관리</a></li>
+              <li><a href="/faq.html">&nbsp;&nbsp;&nbsp;- FAQ 관리</a></li>
+              <li><a href="/notice.html">&nbsp;&nbsp;&nbsp;- 공지사항 관리</a></li>
+              <li><a href="/version.html">&nbsp;&nbsp;&nbsp;- 버전 관리</a></li>
+              <li><a href="/terms.html">&nbsp;&nbsp;&nbsp;- 약관 관리</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">데이터 분석</a>
+            <ul class="menu-items-inner">
+              <li><a href="/drive-result.html">&nbsp;&nbsp;&nbsp;- 운행 결과</a></li>
+              <li><a href="/drive-list.html">&nbsp;&nbsp;&nbsp;- 운수사 목록</a></li>
+              <li><a href="/interval.html">&nbsp;&nbsp;&nbsp;- 배차 목록</a></li>
+              <li><a href="/departure-arrival.html">&nbsp;&nbsp;&nbsp;- 출/도착지 목록 정보</a></li>
+              <li><a href="/terminal.html">&nbsp;&nbsp;&nbsp;- 터미널/경유지 정보</a></li>
+              <li><a href="/batch.html">&nbsp;&nbsp;&nbsp;- Batch 결과 조회</a></li>
+            </ul>
+            </li>
+            <li class="hamburger-li"><a href="#">관리자 관리</a>
+            </li>
+        </ul>
+    </div>
     </header>
     <!-- ============================================================== -->
     <!-- End Topbar header -->
@@ -157,6 +197,11 @@
                   <a href="version.html"
                     class="sidebar-link sub-menu"><span
                     class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;버전 관리</span></a>
+                </li>
+                <li class="sidebar-item submenu">
+                  <a href="terms.html"
+                    class="sidebar-link sub-menu"><span
+                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;약관 관리</span></a>
                 </li>
               </ul>
             </li>
@@ -243,9 +288,9 @@
             <tr>
               <td bgcolor="#f0f0f0">No</td>
               <td bgcolor="#f0f0f0">타이틀</td>
-              <td bgcolor="#f0f0f0">운수사</td>
-              <td bgcolor="#f0f0f0">사고 위치</td>
-              <td bgcolor="#f0f0f0">사고 내용</td>
+              <td bgcolor="#f0f0f0" class="skip">운수사</td>
+              <td bgcolor="#f0f0f0" class="skip">사고 위치</td>
+              <td bgcolor="#f0f0f0" class="skip">사고 내용</td>
               <td bgcolor="#f0f0f0">등록인</td>
               <td bgcolor="#f0f0f0">배차 ID</td>
               <td bgcolor="#f0f0f0">신고일자</td>
@@ -253,9 +298,9 @@
             <tr class="details" onClick="location.href='accident-inner.html'">
               <td>12</td>
               <td>가나다라 마바사 아...</a></td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -263,9 +308,9 @@
             <tr>
               <td>11</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -273,9 +318,9 @@
             <tr>
               <td>10</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -283,9 +328,9 @@
             <tr>
               <td>9</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -293,9 +338,9 @@
             <tr>
               <td>8</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -303,9 +348,9 @@
             <tr>
               <td>7</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -313,9 +358,9 @@
             <tr>
               <td>6</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -323,9 +368,9 @@
             <tr>
               <td>5</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -333,9 +378,9 @@
             <tr>
               <td>4</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -343,9 +388,9 @@
             <tr>
               <td>3</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -353,9 +398,9 @@
             <tr>
               <td>2</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
@@ -363,14 +408,20 @@
             <tr>
               <td>1</td>
               <td>가나다라 마바사 아...</td>
-              <td>삼진고속</td>
-              <td>서울시 행당구 동작...</td>
-              <td>가나다라 마바사 아...</td>
+              <td class="skip">삼진고속</td>
+              <td class="skip">서울시 행당구 동작...</td>
+              <td class="skip">가나다라 마바사 아...</td>
               <td>홍길동</td>
               <td>15</td>
               <td>2023-07-05</td>
             </tr>
           </table>
+          <div class="checkbox2">
+            <ul class="check-button">
+              <li><a href="#">내보내기</a></li>
+            </ul>
+          </div>
+          <div class="pagination-out">
           <div class="pagination">
             <button class="btn-nav left-btn">
               <img src="../assets/images/prev.png" alt="prev">
@@ -388,6 +439,7 @@
               <img src="../assets/images/next.png" alt="next">
             </button>
           </div>
+        </div>
         </div>
       </div>
       <!-- ============================================================== -->

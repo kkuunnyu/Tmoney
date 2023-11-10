@@ -15,6 +15,8 @@
   <!-- Favicon icon -->
   <link rel="shortcut icon" href="/assets/images/tmoney_logo.ico">
   <!-- Custom CSS -->
+  <link href="../assets/libs/jquery-steps/jquery.steps.css" rel="stylesheet" />
+  <link href="../assets/libs/jquery-steps/steps.css" rel="stylesheet" />
   <link href="../dist/css/style.min.css" rel="stylesheet" />
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -259,186 +261,97 @@
       <div class="page-breadcrumb">
         <div class="row">
           <div class="col-12 d-flex no-block align-items-center">
-            <h4 class="page-title">데이터 분석</h4>
+            <h4 class="page-title">APP 관리</h4>
           </div>
         </div>
       </div>
-      <!-- ============================================================== -->
-      <!-- End Bread crumb and right sidebar toggle -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Container fluid  -->
-      <!-- ============================================================== -->
+
       <div class="container-fluid">
         <div class="white-box">
           <div class="status">
-            <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;터미널/경유지 정보
+            <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;버전 관리 - 등록
           </div>
-          <form>
-            <input type="text" class="form-text2" placeholder="내용을 입력하세요">
-            <input type="button" class="img-button">
-            </form>
           <table class="inner-table">
             <tr>
-              <td bgcolor="#f0f0f0">No</td>
-              <td bgcolor="#f0f0f0">이름</td>
-              <td bgcolor="#f0f0f0">구분(시·도)</td>
-              <td bgcolor="#f0f0f0">위·경도</td>
-              <td bgcolor="#f0f0f0">전화번호</td>
-              <td bgcolor="#f0f0f0">주소</td>
-              <td bgcolor="#f0f0f0">우편번호</td>
-            </tr>
-            <tr class="details" onClick="location.href='terminal-inner.html'">
-              <td>12</td>
-              <td>홍길동</td>
-              <td>경기도</td>
-              <td></td>
-              <td>010-1234-5678</td>
-              <td>경기도 부천시 부천로 198번길 18</td>
-              <td>12345</td>
+              <td width="30%" bgcolor="#f0f0f0">버전코드</td>
+              <td><textarea name="version_code" id="version_code" rows="1"></textarea></td>
             </tr>
             <tr>
-              <td>11</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td bgcolor="#f0f0f0">플랫폼</td>
+              <td  align="left" style="padding-left: 15px;">
+                <label for="agree1" class="radio_box">
+                  <input type="radio" id="agree1" name="agree" value="동의" checked="checked"/>
+                  <span class="on"></span>
+                  A
+                </label>
+                <label for="agree2" class="radio_box">
+                  <input type="radio" id="agree2" name="agree" value="미동의" />
+                  <span class="on"></span>
+                  B
+                </label>
+                <label for="agree3" class="radio_box">
+                  <input type="radio" id="agree3" name="agree" value="미동의" />
+                  <span class="on"></span>
+                  C
+                </label>
+                <label for="agree4" class="radio_box">
+                  <input type="radio" id="agree4" name="agree" value="미동의" />
+                  <span class="on"></span>
+                  D
+                </label>
+              </td>
             </tr>
             <tr>
-              <td>10</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td bgcolor="#f0f0f0">강제 업데이트 여부</td>
+              <td align="left" style="padding-left: 15px;">
+                <label for="agree5" class="radio_box">
+                  <input type="radio" id="agree5" name="agree2" value="동의" checked="checked" />
+                  <span class="on"></span>
+                  예
+                </label>
+                <label for="agree6" class="radio_box">
+                  <input type="radio" id="agree6" name="agree2" value="미동의" />
+                  <span class="on"></span>
+                  아니오
+                </label>
+              </td>
             </tr>
             <tr>
-              <td>9</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td bgcolor="#f0f0f0">업데이트 내용</td>
+              <td height="300px"><textarea name="version_update_inner" id="version_update_inner" rows="1"></textarea></td>
             </tr>
             <tr>
-              <td>8</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td bgcolor="#f0f0f0">APK 업로드</td>
+              <td><textarea name="version_upload" id="version_upload" rows="1"></textarea></td>
             </tr>
             <tr>
-              <td>7</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
+              <td bgcolor="#f0f0f0">파일 이름</td>
+              <td><textarea name="version_file" id="version_file" rows="1"></textarea></td>
           </table>
           <div class="checkbox2">
             <ul class="check-button">
-              <li><a href="#">등록</a></li>
+              <li><a href="/version-inner.html">저장</a></li>
             </ul>
           </div>
-          <div class="pagination-out">
-          <div class="pagination">
-            <button class="btn-nav left-btn">
-              <img src="../assets/images/prev.png" alt="prev">
-            </button>
-            <div class="page-numbers">
-              <button class="btn-page btn-selected">1</button>
-              <button class="btn-page">2</button>
-              <button class="btn-page">3</button>
-              <button class="btn-page">4</button>
-              <button class="btn-page">5</button>
-              <span class="dots">...</span>
-              <button class="btn-page">99</button>
-            </div>
-            <button class="btn-nav right-btn">
-              <img src="../assets/images/next.png" alt="next">
-            </button>
-          </div>
-        </div>
         </div>
       </div>
-      <!-- ============================================================== -->
-      <!-- End Container fluid  -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- footer -->
-      <!-- ============================================================== -->
-      <footer class="footer text-center">
-        ⓒTmoney. All Rights Reserved.
-      </footer>
-      <!-- ============================================================== -->
-      <!-- End footer -->
-      <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
-    <!-- End Page wrapper  -->
+    <!-- End Container fluid  -->
     <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer text-center">
+      ⓒTmoney. All Rights Reserved.
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Page wrapper  -->
+  <!-- ============================================================== -->
   </div>
   <!-- ============================================================== -->
   <!-- End Wrapper -->
@@ -458,6 +371,9 @@
   <script src="../dist/js/sidebarmenu.js"></script>
   <!--Custom JavaScript -->
   <script src="../dist/js/custom.min.js"></script>
+  <!-- this page js -->
+  <script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
+  <script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
 </body>
 
 </html>
