@@ -487,7 +487,6 @@ td {
   padding: 50px;
   border: 3px solid rgba(0, 0, 0, .16);
   border-radius: 20px;
-  
 }
 
 .register-box {
@@ -976,6 +975,10 @@ h4{
   height: auto;
 }
 
+.white-box{
+  padding: 1dvb;
+}
+
 .page-title{
   font-size: 1.5rem;
 }
@@ -1038,7 +1041,7 @@ h4{
 }
 
 .menu-items{
-  padding-top: 120px;
+  padding-top: 80px;
   transform: translate(100%);
   transition: transform 0.5s ease-in-out;
   padding-left: 30px;
@@ -1128,7 +1131,7 @@ h4{
 /* ==========================================mobile */
 @media screen and (max-width: 768px){
   .white-box{
-
+    padding: 0px;
   }
 
   .left-sidebar{
@@ -1182,7 +1185,7 @@ h4{
   }
   
   .menu-items{
-    padding-top: 120px;
+    padding-top: 80px;
     transform: translate(100%);
     transition: transform 0.5s ease-in-out;
     padding-left: 30px;
@@ -1286,7 +1289,7 @@ h4{
   .box4,
   .box5,
   .box6 {
-    margin: 2rem 1rem;
+    margin: 1.5rem 1rem;
   }
 
   .sub-title{
