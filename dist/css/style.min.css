@@ -415,7 +415,7 @@ a {
 
 tr,
 td {
-  padding: 5px;
+  vertical-align: middle;
 }
 
 .inner-table {
@@ -430,10 +430,12 @@ td {
   overflow: hidden;
   font-size: 18px;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
 .inner-table > tr,td{
   padding: 13px;
+  box-sizing: border-box;
 }
 
 .inner-table th:not(:last-child),
@@ -531,10 +533,10 @@ td {
   float: left;
   padding: 0.35rem;
   margin-right: 10px;
-}
-
-.form-text2{
-  padding: 0.02rem;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  height: 35px;
+  border-radius: 5px;
 }
 
 .searchbutton {
@@ -544,26 +546,28 @@ td {
 
 input.form-text2 {
   border: 1px solid #bcbcbc;
-  height: 28px;
+  height: 35px;
   vertical-align: middle;
   padding-left: 10px;
   float: left;
   margin-bottom: 10px;
   margin-right: 5px;
   color: #666;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 input.img-button {
   background: url("../search.png") no-repeat;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border: none;
   cursor: pointer;
   vertical-align: middle;
   float: left;
   margin-right: 10px;
   margin-top: 3px;
-
+  background-size: cover;
 }
 
 .faq-search {
@@ -610,13 +614,11 @@ input.img-button4 {
 .pagination {
   margin-top: 30px;
   border: none;
-
 }
 
 .pagination-out{
   width: 100%;
   display: flex;
-  
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -770,11 +772,13 @@ input.img-button4 {
 #category-choice{
   border-radius: 5px;
   border: 1px solid #a6a6a6;
+  width: 130px;
 }
 
 .category2{
   float: left;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 select {
@@ -784,6 +788,10 @@ select {
   background-color: #fff;
   padding: 0.6em 1.4em 0.5em 0.8em;
   border: 1px solid #aaa;
+  box-sizing: border-box;
+  height: 35px;
+  width: 130px;
+  border-radius: 5px;
 }
 
 .text {
@@ -802,6 +810,7 @@ select {
   border: 1px solid #a6a6a6;
   font-size: 1rem;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 .inner-title {
@@ -821,6 +830,7 @@ h4{
   font-size: 1rem;
   font-family: sans-serif;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .text-box2 {
@@ -831,6 +841,7 @@ h4{
   width: 100%;
   min-height: 400px;
   height: auto;
+  box-sizing: border-box;
 }
 
 .title-text2 {
@@ -976,18 +987,15 @@ h4{
 }
 
 .white-box{
-  padding: 1dvb;
+  background: #fff;
+  margin: 30px 10px 10px 10px;
+  padding: 50px;
+  border: 3px solid rgba(0, 0, 0, .16);
+  border-radius: 20px;
 }
 
 .page-title{
   font-size: 1.5rem;
-}
-
-#main-wrapper[data-sidebartype=mini-sidebar] .page-wrapper {
-  margin-left: 270px;
-}
-#main-wrapper[data-sidebartype=full] .page-wrapper {
-  margin-left: 270px;
 }
 
 .left-sidebar {
@@ -1126,12 +1134,17 @@ h4{
 .skip{
   display: none;
 }
+
+.text-box2{
+  min-height: 300px;
+}
 }
 
 /* ==========================================mobile */
 @media screen and (max-width: 768px){
   .white-box{
-    padding: 0px;
+    padding: 20px 20px 50px 20px;
+    margin: 15px 10px 10px 10px;
   }
 
   .left-sidebar{
@@ -1306,5 +1319,113 @@ h4{
 
   .mycheck{
     background: #351736;
+  }
+
+  .title-text2{
+    font-size: 16px;
+  }
+
+  .text-box2{
+    font-size: 14px;
+    min-height: 150px;
+  }
+
+  .text-time{
+    font-size: 14px;
+  }
+
+  .status{
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .page-title{
+    font-size: 20px;
+    margin: 20px 0 0 40px;
+  }
+
+  tr, td{
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .right_arrow{
+    width: 15px;
+    height: 15px;
+  }
+
+  .pagination {
+    margin-top: 10px;
+    border: none;
+  }
+  
+  .page-numbers{
+    display: none;
+  }
+  
+  h4{
+    font-size: 16px;
+  }
+
+  select {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #666;
+    background-color: #fff;
+    padding: 0.4em 1em 0.3em 0.3em;
+    border: 1px solid #aaa;
+    height: 25px;
+    width: 120px;
+    border-radius: 5px;
+  }
+
+  input.form-text2 {
+    border: 1px solid #bcbcbc;
+    height: 25px;
+    vertical-align: middle;
+    padding-left: 10px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color: #666;
+    box-sizing: border-box;
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  .calendar {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #b9b9b9;
+    float: left;
+    padding: 0.35rem;
+    margin-right: 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    height: 25px;
+    width: 110px;
+    border-radius: 5px;
+  }
+
+  .check-button .excel{
+    width: 120px;
+  }
+
+  .check-button .update{
+    width: 120px;
+  }
+
+  input.img-button {
+    background: url("../search.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+    background-size: cover;
   }
 }

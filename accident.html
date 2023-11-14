@@ -278,12 +278,20 @@
           <div class="status">
             <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow">&nbsp;&nbsp;사고 접수 관리
           </div>
+          <div class="category2">
+            <label for="lang">운수사</label>
+            <select name="languages" id="lang">
+                <option value="whole">전체</option>
+                <option value="samjin">삼진고속</option>
+                <option value="hanyang">한양고속</option>
+                <option value="kumho">금호고속</option>
+            </select>
+            </div>
             <form>
-            <input type="text" class="form-text2" placeholder="내용을 입력하세요">
-            <input type="button" class="img-button">
+              <input type="date" name="startday" class="calendar">
+              <input type="text" class="form-text2" placeholder="내용을 입력하세요">
+              <input type="button" class="img-button">
             </form>
-            
-            <input type="date" name="startday" class="calendar">
           <table class="inner-table">
             <tr>
               <td bgcolor="#f0f0f0">No</td>
@@ -418,7 +426,7 @@
           </table>
           <div class="checkbox2">
             <ul class="check-button">
-              <li><a href="#">내보내기</a></li>
+              <li class="excel"><a href="#" class="excel">엑셀내보내기</a></li>
             </ul>
           </div>
           <div class="pagination-out">
