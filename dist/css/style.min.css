@@ -998,7 +998,11 @@ h4{
   width: 100px;
 }
 
-.acc-table-comp{
+.acc-table-location{
+  width: 190px;
+}
+
+.acc-table-company{
   width: 100px;
 }
 
@@ -1022,6 +1026,10 @@ h4{
 .accLatest:hover{
   background: #666;
   color: #fff;
+}
+
+.interval-id{
+  width: 100px;
 }
 
 /* ===============================================Tablet */
@@ -1491,10 +1499,13 @@ h4{
   width: 60px;
 }
 
-.acc-table-comp{
+.acc-table-location{
   width: 60px;
 }
 
+.acc-table-company{
+  width: 70px;
+}
 
 
 
