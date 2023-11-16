@@ -699,6 +699,7 @@ input.img-button4 {
   list-style: none;
   cursor: pointer;
   float: right;
+  background: #fff;
 }
 
 /* 1차메뉴 */
@@ -713,7 +714,7 @@ input.img-button4 {
 
 
 .check-button>li:hover {
-  background: #333;
+  background: #f28200;
 }
 
 .check-button>li:hover a {
@@ -974,10 +975,54 @@ h4{
   display: none;
 }
 
+.table-no{
+  width: 10px;
+}
 
+.faq-table-category{
+  width: 135px;
+}
 
+.table-date{
+  width: 135px;
+}
 
+.short-text{
+  overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	max-width:100px;
+}
 
+.acc-table-registrant{
+  width: 100px;
+}
+
+.acc-table-comp{
+  width: 100px;
+}
+
+.table-category{
+  width: 100px;
+}
+
+.accLatest{
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  line-height: 22px;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  list-style: none;
+  cursor: pointer;
+  background: #fff;
+  font-family: sans-serif;
+}
+
+.accLatest:hover{
+  background: #666;
+  color: #fff;
+}
 
 /* ===============================================Tablet */
 @media screen and (min-width : 768px) and (max-width: 1024px){
@@ -1138,6 +1183,7 @@ h4{
 .text-box2{
   min-height: 300px;
 }
+
 }
 
 /* ==========================================mobile */
@@ -1346,7 +1392,7 @@ h4{
 
   tr, td{
     font-size: 14px;
-    padding: 5px;
+    padding: 8px;
   }
 
   .right_arrow{
@@ -1428,4 +1474,28 @@ h4{
     margin-top: 3px;
     background-size: cover;
   }
+
+.faq-table-category{
+  width: 100px;
+}
+
+.table-category{
+  width: 80px;
+}
+
+.table-date{
+  width: 90px;
+}
+
+.acc-table-registrant{
+  width: 60px;
+}
+
+.acc-table-comp{
+  width: 60px;
+}
+
+
+
+
 }

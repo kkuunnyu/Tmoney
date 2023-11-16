@@ -277,61 +277,60 @@
           <div class="status">
             <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;공지사항 관리
           </div>
+          <div class="category2">
+            <label for="lang">카테고리</label>
+            <select name="languages" id="lang" class="searchCategory">
+              <option value="whole">전체</option>
+              <option value="app_error">긴급</option>
+              <option value="device">업데이트</option>
+            </select>
+          </div>
           <form>
-            <input type="text" class="form-text2" placeholder="내용을 입력하세요">
-            <input type="button" class="img-button">
+            <input type="text" class="form-text2" id="searchInput" placeholder="내용을 입력하세요" />
+            <input type="button" class="img-button" id="searchBtn" />
           </form>
-
-          <input type="date" name="startday" class="calendar">
           <table class="inner-table">
             <tr>
-              <td bgcolor="#f0f0f0">NO</td>
-              <td bgcolor="#f0f0f0" width="10%">카테고리</td>
+              <td bgcolor="#f0f0f0" class="table-no">NO</td>
+              <td bgcolor="#f0f0f0" class="table-category">카테고리</td>
               <td bgcolor="#f0f0f0">제목</td>
-              <td bgcolor="#f0f0f0" class="skip">내용</td>
-              <td bgcolor="#f0f0f0">등록일자</td>
+              <td bgcolor="#f0f0f0" class="table-date">등록일자</td>
             </tr>
             <tr class="details" onClick="location.href='notice-inner.html'">
-              <td>1</td>
-              <td>긴급</td>
-              <td>제천IC 부근 차량사고 발생</td>
-              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
-              <td>2023-07-05</td>
+              <td class="table-no">1</td>
+              <td class="table-category">긴급</td>
+              <td class="short-text">제천IC 부근 차량사고 발생</td>
+              <td class="table-date">2023-07-05</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>업데이트</td>
-              <td>지능형 앱 단말기 업데이트 공지</td>
-              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
-              <td></td>
+              <td class="table-no">2</td>
+              <td class="table-category">업데이트</td>
+              <td class="short-text">지능형 앱 단말기 업데이트 공지</td>
+              <td class="table-date"></td>
             </tr>
             <tr>
-              <td>3</td>
-              <td></td>
-              <td></td>
-              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
-              <td></td>
+              <td class="table-no">3</td>
+              <td class="table-category"></td>
+              <td class="short-text"></td>
+              <td class="table-date"></td>
             </tr>
             <tr>
-              <td>4</td>
-              <td></td>
-              <td></td>
-              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
-              <td></td>
+              <td class="table-no">4</td>
+              <td class="table-category"></td>
+              <td class="short-text"></td>
+              <td class="table-date"></td>
             </tr>
             <tr>
-              <td>5</td>
-              <td></td>
-              <td></td>
-              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
-              <td></td>
+              <td class="table-no">5</td>
+              <td class="table-category"></td>
+              <td class="short-text"></td>
+              <td class="table-date"></td>
             </tr>
             <tr>
-              <td>6</td>
-              <td></td>
-              <td></td>
-              <td class="skip">충북 제천시 봉양읍 명암리 중앙고속도로 상행선 제천 IC 인근에서 시멘트 트레일러 차량...</td>
-              <td></td>
+              <td class="table-no">6</td>
+              <td class="table-category"></td>
+              <td class="short-text"></td>
+              <td class="table-date"></td>
             </tr>
           </table>
           <div class="checkbox2">
