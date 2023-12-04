@@ -1178,7 +1178,7 @@ h4{
 
 
 /* ===================================Tablet========================================================================================================================================= */
-@media screen and (min-width : 768px) and (max-width: 1500px){
+@media screen and (min-width : 768px) and (max-width: 1400px){
 .boxes img{
   max-width: 100%;
   height: auto;
