@@ -47,112 +47,7 @@
     <!-- Topbar header - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <header class="topbar" data-navbarbg="skin5">
-      <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-        <div class="navbar-header" data-logobg="skin5">
-          <!-- ============================================================== -->
-          <!-- Logo -->
-          <!-- ============================================================== -->
-          <a class="navbar-brand" href="index.html">
-            <!-- Logo text -->
-            <span class="logo-text ms-2">
-              <img src="../assets/images/tmoney_text.png" alt="homepage" class="light-logo" />
-
-
-
-            </span>
-
-            <!-- Logo icon -->
-            <!-- <b class="logo-icon"> -->
-            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-            <!-- Dark Logo icon -->
-            <!-- <img src="../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
-
-            <!-- </b> -->
-            <!--End Logo icon -->
-          </a>
-          <!-- ============================================================== -->
-          <!-- End Logo -->
-          <!-- ============================================================== -->
-          <!-- ============================================================== -->
-          <!-- Toggle which is visible on mobile only -->
-          <!-- ============================================================== -->
-
-        </div>
-        <a href="./index.html" class="sub-title">지능형 앱 단말기 관리자</a>
-        <!-- ============================================================== -->
-        <!-- End Logo -->
-        <!-- ============================================================== -->
-        <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-          <!-- ============================================================== -->
-          <!-- toggle and nav items -->
-          <!-- ============================================================== -->
-          <ul class="navbar-nav float-start me-auto">
-          </ul>
-          <!-- ============================================================== -->
-          <!-- Right side toggle and nav items -->
-          <!-- ============================================================== -->
-          <ul class="navbar-nav float-end">
-
-            <li class="nav-item dropdown">
-              <a class="
-                    nav-link
-                    dropdown-toggle
-                    text-muted
-                    waves-effect waves-dark
-                    pro-pic
-                  " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <a class="user-id" href="#">통합관리자1</a><a class="logout" href="./login.html">로그아웃</a>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end user-dd animated" aria-labelledby="navbarDropdown">
-
-              </ul>
-            </li>
-            <!-- ============================================================== -->
-            <!-- User profile and search -->
-            <!-- ============================================================== -->
-          </ul>
-        </div>
-      </nav>
-      <!-- hamburger menu -->
-      <div class="hamburger">
-        <input type="checkbox">
-        <div class="hamburgerlines">
-            <span class="lines line1">
-  
-            </span>
-            <span class="lines line2">
-  
-            </span>
-            <span class="lines line3">
-  
-            </span>
-        </div>
-        <ul class="menu-items">
-            <li class="hamburger-li"><a href="/index.html">서버 모니터링</a>
-            </li>
-            <li class="hamburger-li"><a href="#">APP관리</a>
-            <ul class="menu-items-inner">
-              <li><a href="/accident.html">&nbsp;&nbsp;&nbsp;- 사고 접수 관리</a></li>
-              <li><a href="/faq.html">&nbsp;&nbsp;&nbsp;- FAQ 관리</a></li>
-              <li><a href="/notice.html">&nbsp;&nbsp;&nbsp;- 공지사항 관리</a></li>
-              <li><a href="/version.html">&nbsp;&nbsp;&nbsp;- 버전 관리</a></li>
-              <li><a href="/terms.html">&nbsp;&nbsp;&nbsp;- 약관 관리</a></li>
-            </ul>
-            </li>
-            <li class="hamburger-li"><a href="#">데이터 분석</a>
-            <ul class="menu-items-inner">
-              <li><a href="/drive-result.html">&nbsp;&nbsp;&nbsp;- 운행 결과</a></li>
-              <li><a href="/drive-list.html">&nbsp;&nbsp;&nbsp;- 운수사 목록</a></li>
-              <li><a href="/interval.html">&nbsp;&nbsp;&nbsp;- 배차 목록</a></li>
-              <li><a href="/departure-arrival.html">&nbsp;&nbsp;&nbsp;- 출/도착지 목록 정보</a></li>
-              <li><a href="/terminal.html">&nbsp;&nbsp;&nbsp;- 터미널/경유지 정보</a></li>
-              <li><a href="/batch.html">&nbsp;&nbsp;&nbsp;- Batch 결과 조회</a></li>
-            </ul>
-            </li>
-            <li class="hamburger-li"><a href="/administrator.html">관리자 관리</a>
-            </li>
-        </ul>
-    </div>
+      {% include 'header.html' %}
     </header>
     <!-- ============================================================== -->
     <!-- End Topbar header -->
@@ -161,90 +56,7 @@
     <!-- Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
     <aside class="left-sidebar" data-sidebarbg="skin5">
-      <!-- Sidebar scroll-->
-      <div class="scroll-sidebar">
-        <!-- Sidebar navigation-->
-        <nav class="sidebar-nav">
-          <ul id="sidebarnav" class="pt-4">
-            <li class="sidebar-item main-sidebar">
-              <a class="sidebar-link main-menu waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><span
-                  class="hide-menu">서버 모니터링</span></a>
-            </li>
-            <li class="sidebar-item main-sidebar">
-              <a class="sidebar-link main-menu has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                <span class="hide-menu">APP 관리</span></a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item submenu">
-                  <a href="accident.html" class="sidebar-link sub-menu"><span class="hide-menu">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;사고 접수 관리
-                    </span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="faq.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;FAQ
-                      관리</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="notice.html"
-                    class="sidebar-link sub-menu"><span
-                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;공지사항 관리</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="version.html"
-                    class="sidebar-link sub-menu"><span
-                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;버전 관리</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="terms.html"
-                    class="sidebar-link sub-menu"><span
-                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;약관 관리</span></a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item main-sidebar">
-              <a class="sidebar-link main-menu has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                aria-expanded="false"><span class="hide-menu">데이터 분석</span></a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item submenu">
-                  <a href="drive-result.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;운행 결과</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="drive-list.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;운수사
-                      목록</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="interval.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;배차
-                      목록</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="departure-arrival.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;출/도착지 목록
-                      정보</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="terminal.html" class="sidebar-link sub-menu"><span class="hide-menu"><span
-                        class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;터미널/경유지
-                        정보</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="batch.html" class="sidebar-link sub-menu"><span class="hide-menu"><span
-                        class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Batch 결과
-                        조회</span></a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item main-sidebar">
-              <a class="sidebar-link main-menu waves-effect waves-dark sidebar-link" href="administrator.html"
-                aria-expanded="false"><span class="hide-menu">관리자 관리</span></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- End Sidebar navigation -->
-      </div>
-      <!-- End Sidebar scroll-->
+      {% include 'left-sidebar.html' %}
     </aside>
     <!-- ============================================================== -->
     <!-- End Left Sidebar - style you can find in sidebar.scss  -->
@@ -274,84 +86,97 @@
           <div class="status">
             <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;운행 결과 - 상세 조회
           </div>
-          <table class="inner-table">
-            <tr>
-              <td bgcolor="#f0f0f0" width="15%" style="vertical-align: middle;">타입</td>
-              <td style="text-align: left;"></td>
+          <table class="inner-table" id="drDetail">
+            <!-- <tr>
+              <td bgcolor="#f0f0f0" width="15%">NO</td>
+              <td class="inner-text">1</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">노선</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">타입</td>
+              <td class="inner-text">우등</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" rowspan="4" style="vertical-align: middle;">경유지</td>
-              <td style="text-align: left;">경유 1 정보 / 실 출도착</td>
+              <td bgcolor="#f0f0f0">노선ID</td>
+              <td class="inner-text">A123456789123456</td>
             </tr>
             <tr>
-
-              <td style="text-align: left;">경유 1의 검표 정보</td>
+              <td bgcolor="#f0f0f0">노선순번</td>
+              <td class="inner-text">1</td>
             </tr>
             <tr>
-
-              <td style="text-align: left;">경유 2</td>
+              <td bgcolor="#f0f0f0">터미널</td>
+              <td class="inner-text">강릉고속버스터미널</td>
             </tr>
             <tr>
-
-              <td style="text-align: left;">경유 2의 검표 정보</td>
+              <td bgcolor="#f0f0f0">터미널 위·경도</td>
+              <td class="inner-text">37.75, 128.87</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">배차일시</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">배차일자</td>
+              <td class="inner-text">2023-11-22</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">예상 출발시간</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">배차순번</td>
+              <td class="inner-text">2</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">예상 도착시간</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">운행일자</td>
+              <td class="inner-text">2023-11-22</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">실 출발시간</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">운행일시</td>
+              <td class="inner-text">13:10</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">실 도착시간</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">운수사</td>
+              <td class="inner-text">강릉고속</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">담당 운수사</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">운수사원</td>
+              <td class="inner-text">홍길동</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">담당 운수사원</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">차량번호</td>
+              <td class="inner-text">10아 9812</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">차량번호</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">승차수</td>
+              <td class="inner-text">26</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">좌석정보</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">하차수</td>
+              <td class="inner-text">26</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">등록인</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">잔여수</td>
+              <td class="inner-text">0</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">등록일자</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">배차방식구분코드</td>
+              <td class="inner-text">Null</td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">수정인</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">좌석제 사용여부</td>
+              <td class="inner-text"></td>
             </tr>
             <tr>
-              <td bgcolor="#f0f0f0" style="vertical-align: middle;">수정일자</td>
-              <td style="text-align: left;"></td>
+              <td bgcolor="#f0f0f0">정기임시여부</td>
+              <td class="inner-text"></td>
             </tr>
+            <tr>
+              <td bgcolor="#f0f0f0">버스운행이력종류코드</td>
+              <td class="inner-text"></td>
+            </tr>
+            <tr>
+              <td bgcolor="#f0f0f0">버스운행이력요청코드</td>
+              <td class="inner-text"></td>
+            </tr> -->
           </table>
+          <div class="checkbox2">
+            <ul class="check-button">
+              <li class="listBtn"><a href="javascript:void(0)">확인</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- ============================================================== -->
@@ -361,7 +186,7 @@
       <!-- footer -->
       <!-- ============================================================== -->
       <footer class="footer text-center">
-        ⓒTmoney. All Rights Reserved.
+        {% include 'footer.html' %}
       </footer>
       <!-- ============================================================== -->
       <!-- End footer -->
@@ -389,6 +214,9 @@
   <script src="../dist/js/sidebarmenu.js"></script>
   <!--Custom JavaScript -->
   <script src="../dist/js/custom.min.js"></script>
+  <script src="../dist/js/axios.js"></script>
+  <script src="../dist/js/header.js"></script>
+  <script src="../dist/js/drive-result-inner.js"></script>
 </body>
 
 </html>

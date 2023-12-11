@@ -71,7 +71,7 @@
       <div class="page-breadcrumb">
         <div class="row">
           <div class="col-12 d-flex no-block align-items-center">
-            <h4 class="page-title">데이터 분석</h4>
+            <h4 class="page-title">기초 정보</h4>
           </div>
         </div>
       </div>
@@ -82,47 +82,59 @@
       <!-- Container fluid  -->
       <!-- ============================================================== -->
       <div class="container-fluid">
-        <div class="white-box" id="trmlDetail">
+        <div class="white-box">
           <div class="status">
-            <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;터미널/경유지 정보 -
-            상세 조회
+            <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;운수사 목록
           </div>
-          <table class="inner-table">
-            <tr>
-              <td width="20%" bgcolor="#f0f0f0">터미널 코드</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td bgcolor="#f0f0f0">터미널 이름</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td bgcolor="#f0f0f0">터미널 SHCT</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td bgcolor="#f0f0f0">터미널 위·경도</td>
-              <td></td>
-            </tr>
-            <tr>
+          <div class="top-select">
+            <div class="fix-search">
+              <input spellcheck="false" type="text" class="form-text2" id="searchInput" placeholder="내용을 입력하세요">
+              <button class="search-button" id="searchBtn">검색</button>
+              <input type="button" class="img-button" id="resetBtn">
+            </div>
+            <div class="select-box">
+              <select id="sizeOpt">
+                <option value="10">10개씩</option>
+                <option value="20">20개씩</option>
+                <option value="50">50개씩</option>
+                <option value="100">100개씩</option>
+              </select>
+            </div>
+          </div>
+          <table class="inner-table" id="cacmList">
+            <!-- <tr>
+              <td bgcolor="#f0f0f0">No</td>
+              <td bgcolor="#f0f0f0">운수사 코드</td>
+              <td bgcolor="#f0f0f0">운수사 이름</td>
+              <td bgcolor="#f0f0f0">SHCT</td>
               <td bgcolor="#f0f0f0">주소</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td bgcolor="#f0f0f0">우편번호</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td bgcolor="#f0f0f0">버스코드</td>
-              <td></td>
+              <td bgcolor="#f0f0f0">전화번호</td>
+            </tr> -->
+            <tr class="details" onClick="location.href='drive-list-inner.html'">
+              <!-- <td>15</td>
+              <td>A0000008</td>
+              <td>삼진고속</td>
+              <td>Null</td>
+              <td>서울시 행당구 동작로 55-52</td>
+              <td>010-8512-2345</td> -->
             </tr>
           </table>
-          <div class="checkbox2">
-            <ul class="check-button">
-              <li><a href="#">확인</a></li>
-              <li><a href="#">삭제</a></li>
-              <li><a href="#">수정</a></li>
-            </ul>
+          <div class="pagination">
+            <button class="btn-nav left-btn">
+              <img src="../assets/images/prev.png" alt="prev" id="prevBtn">
+            </button>
+            <div class="page-numbers" id="pageNumbers">
+              <!-- <button class="btn-page btn-selected">1</button>
+              <button class="btn-page">2</button>
+              <button class="btn-page">3</button>
+              <button class="btn-page">4</button>
+              <button class="btn-page">5</button>
+              <span class="dots">...</span>
+              <button class="btn-page">99</button> -->
+            </div>
+            <button class="btn-nav right-btn">
+              <img src="../assets/images/next.png" alt="next" id="nextBtn">
+            </button>
           </div>
         </div>
       </div>
@@ -163,7 +175,7 @@
   <script src="../dist/js/custom.min.js"></script>
   <script src="../dist/js/axios.js"></script>
   <script src="../dist/js/header.js"></script>
-  <script src="../dist/js/terminal-inner.js"></script>
+  <script src="../dist/js/info-drive-list.js"></script>
 </body>
 
 </html>

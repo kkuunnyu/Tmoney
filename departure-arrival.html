@@ -47,112 +47,7 @@
     <!-- Topbar header - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <header class="topbar" data-navbarbg="skin5">
-      <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-        <div class="navbar-header" data-logobg="skin5">
-          <!-- ============================================================== -->
-          <!-- Logo -->
-          <!-- ============================================================== -->
-          <a class="navbar-brand" href="index.html">
-            <!-- Logo text -->
-            <span class="logo-text ms-2">
-              <img src="../assets/images/tmoney_text.png" alt="homepage" class="light-logo" />
-
-
-
-            </span>
-
-            <!-- Logo icon -->
-            <!-- <b class="logo-icon"> -->
-            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-            <!-- Dark Logo icon -->
-            <!-- <img src="../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
-
-            <!-- </b> -->
-            <!--End Logo icon -->
-          </a>
-          <!-- ============================================================== -->
-          <!-- End Logo -->
-          <!-- ============================================================== -->
-          <!-- ============================================================== -->
-          <!-- Toggle which is visible on mobile only -->
-          <!-- ============================================================== -->
-
-        </div>
-        <a href="./index.html" class="sub-title">지능형 앱 단말기 관리자</a>
-        <!-- ============================================================== -->
-        <!-- End Logo -->
-        <!-- ============================================================== -->
-        <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-          <!-- ============================================================== -->
-          <!-- toggle and nav items -->
-          <!-- ============================================================== -->
-          <ul class="navbar-nav float-start me-auto">
-          </ul>
-          <!-- ============================================================== -->
-          <!-- Right side toggle and nav items -->
-          <!-- ============================================================== -->
-          <ul class="navbar-nav float-end">
-
-            <li class="nav-item dropdown">
-              <a class="
-                    nav-link
-                    dropdown-toggle
-                    text-muted
-                    waves-effect waves-dark
-                    pro-pic
-                  " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <a class="user-id" href="#">통합관리자1</a><a class="logout" href="./login.html">로그아웃</a>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end user-dd animated" aria-labelledby="navbarDropdown">
-
-              </ul>
-            </li>
-            <!-- ============================================================== -->
-            <!-- User profile and search -->
-            <!-- ============================================================== -->
-          </ul>
-        </div>
-      </nav>
-      <!-- hamburger menu -->
-      <div class="hamburger">
-        <input type="checkbox">
-        <div class="hamburgerlines">
-            <span class="lines line1">
-  
-            </span>
-            <span class="lines line2">
-  
-            </span>
-            <span class="lines line3">
-  
-            </span>
-        </div>
-        <ul class="menu-items">
-            <li class="hamburger-li"><a href="/index.html">서버 모니터링</a>
-            </li>
-            <li class="hamburger-li"><a href="#">APP관리</a>
-            <ul class="menu-items-inner">
-              <li><a href="/accident.html">&nbsp;&nbsp;&nbsp;- 사고 접수 관리</a></li>
-              <li><a href="/faq.html">&nbsp;&nbsp;&nbsp;- FAQ 관리</a></li>
-              <li><a href="/notice.html">&nbsp;&nbsp;&nbsp;- 공지사항 관리</a></li>
-              <li><a href="/version.html">&nbsp;&nbsp;&nbsp;- 버전 관리</a></li>
-              <li><a href="/terms.html">&nbsp;&nbsp;&nbsp;- 약관 관리</a></li>
-            </ul>
-            </li>
-            <li class="hamburger-li"><a href="#">데이터 분석</a>
-            <ul class="menu-items-inner">
-              <li><a href="/drive-result.html">&nbsp;&nbsp;&nbsp;- 운행 결과</a></li>
-              <li><a href="/drive-list.html">&nbsp;&nbsp;&nbsp;- 운수사 목록</a></li>
-              <li><a href="/interval.html">&nbsp;&nbsp;&nbsp;- 배차 목록</a></li>
-              <li><a href="/departure-arrival.html">&nbsp;&nbsp;&nbsp;- 출/도착지 목록 정보</a></li>
-              <li><a href="/terminal.html">&nbsp;&nbsp;&nbsp;- 터미널/경유지 정보</a></li>
-              <li><a href="/batch.html">&nbsp;&nbsp;&nbsp;- Batch 결과 조회</a></li>
-            </ul>
-            </li>
-            <li class="hamburger-li"><a href="/administrator.html">관리자 관리</a>
-            </li>
-        </ul>
-    </div>
+      {% include 'header.html' %}
     </header>
     <!-- ============================================================== -->
     <!-- End Topbar header -->
@@ -161,90 +56,7 @@
     <!-- Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
     <aside class="left-sidebar" data-sidebarbg="skin5">
-      <!-- Sidebar scroll-->
-      <div class="scroll-sidebar">
-        <!-- Sidebar navigation-->
-        <nav class="sidebar-nav">
-          <ul id="sidebarnav" class="pt-4">
-            <li class="sidebar-item main-sidebar">
-              <a class="sidebar-link main-menu waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><span
-                  class="hide-menu">서버 모니터링</span></a>
-            </li>
-            <li class="sidebar-item main-sidebar">
-              <a class="sidebar-link main-menu has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                <span class="hide-menu">APP 관리</span></a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item submenu">
-                  <a href="accident.html" class="sidebar-link sub-menu"><span class="hide-menu">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;사고 접수 관리
-                    </span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="faq.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;FAQ
-                      관리</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="notice.html"
-                    class="sidebar-link sub-menu"><span
-                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;공지사항 관리</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="version.html"
-                    class="sidebar-link sub-menu"><span
-                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;버전 관리</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="terms.html"
-                    class="sidebar-link sub-menu"><span
-                    class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;약관 관리</span></a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item main-sidebar">
-              <a class="sidebar-link main-menu has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                aria-expanded="false"><span class="hide-menu">데이터 분석</span></a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item submenu">
-                  <a href="drive-result.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;운행 결과</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="drive-list.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;운수사
-                      목록</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="interval.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;배차
-                      목록</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="departure-arrival.html" class="sidebar-link sub-menu"><span
-                      class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;출/도착지 목록
-                      정보</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="terminal.html" class="sidebar-link sub-menu"><span class="hide-menu"><span
-                        class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;터미널/경유지
-                        정보</span></a>
-                </li>
-                <li class="sidebar-item submenu">
-                  <a href="batch.html" class="sidebar-link sub-menu"><span class="hide-menu"><span
-                        class="hide-menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Batch 결과
-                        조회</span></a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item main-sidebar">
-              <a class="sidebar-link main-menu waves-effect waves-dark sidebar-link" href="administrator.html"
-                aria-expanded="false"><span class="hide-menu">관리자 관리</span></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- End Sidebar navigation -->
-      </div>
-      <!-- End Sidebar scroll-->
+      {% include 'left-sidebar.html' %}
     </aside>
     <!-- ============================================================== -->
     <!-- End Left Sidebar - style you can find in sidebar.scss  -->
@@ -274,189 +86,58 @@
           <div class="status">
             <img src="../assets/images/right_arrow.png" alt="right_arrow" class="right_arrow"> &nbsp;&nbsp;출/도착지 목록 정보
           </div>
-          <form>
-            <input type="text" class="form-text2" placeholder="내용을 입력하세요">
-            <input type="button" class="img-button">
+          <div class="top-select">
+            <div class="fix-date">
+            <form>
+              <input type="date" name="startday" class="calendar stDt">
+              <div class="period"><span>~</span></div>
+              <input type="date" name="endday" class="calendar edDt">
             </form>
-          <table class="inner-table">
-            <tr>
-              <td bgcolor="#f0f0f0">No</td>
-              <td bgcolor="#f0f0f0">출발지</td>
-              <td bgcolor="#f0f0f0">출발지 구분(시·도)</td>
-              <td bgcolor="#f0f0f0">도착지</td>
-              <td bgcolor="#f0f0f0">도착지 구분(시·도)</td>
-              <td bgcolor="#f0f0f0">등록일시</td>
-              <td bgcolor="#f0f0f0">등록인</td>
-            </tr>
-            <tr class="details" onClick="location.href='departure-arrival-inner.html'">
-              <td>16</td>
-              <td>A</td>
-              <td>경기도 부천시</td>
-              <td>B</td>
-              <td>경상북도 경주시</td>
-              <td>2023-10-25</td>
-              <td>홍길동</td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>14</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>13</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-          <div class="checkbox2">
-            <ul class="check-button">
-              <li><a href="#">등록</a></li>
-            </ul>
           </div>
-          <div class="pagination-out">
-          <div class="pagination">
-            <button class="btn-nav left-btn">
-              <img src="../assets/images/prev.png" alt="prev">
-            </button>
-            <div class="page-numbers">
-              <button class="btn-page btn-selected">1</button>
-              <button class="btn-page">2</button>
-              <button class="btn-page">3</button>
-              <button class="btn-page">4</button>
-              <button class="btn-page">5</button>
-              <span class="dots">...</span>
-              <button class="btn-page">99</button>
-            </div>
-            <button class="btn-nav right-btn">
-              <img src="../assets/images/next.png" alt="next">
-            </button>
+          <div class="fix-search">
+            <input spellcheck="false" type="text" class="form-text2" id="searchInput" placeholder="내용을 입력하세요">
+            <button class="search-button" id="searchBtn">검색</button>
+            <input type="button" class="img-button" id="resetBtn">
+          </div>
+          <div class="select-box">
+            <select id="sizeOpt">
+              <option value="10">10개씩</option>
+              <option value="20">20개씩</option>
+              <option value="50">50개씩</option>
+              <option value="100">100개씩</option>
+            </select>
           </div>
         </div>
+        <table class="inner-table" id="deptArvlList">
+          <tr>
+            <td bgcolor="#f0f0f0" class="table-no"
+              style="border-top: 1px solid #000; border-bottom: 1px solid #000; font-weight: 600;">No</td>
+            <td bgcolor="#f0f0f0"
+              style="border-top: 1px solid #000; border-bottom: 1px solid #000; font-weight: 600;">출발 터미널</td>
+            <td bgcolor="#f0f0f0"
+              style="border-top: 1px solid #000; border-bottom: 1px solid #000; font-weight: 600;">도착 터미널</td>
+          </tr>
+        </table>
+          
+          <div class="pagination-out">
+            <div class="pagination">
+              <button class="btn-nav left-btn">
+                <img src="../assets/images/prev.png" alt="prev" id="prevBtn">
+              </button>
+              <div class="page-numbers" id="pageNumbers">
+                <button class="btn-page btn-selected">1</button>
+                <button class="btn-page">2</button>
+                <button class="btn-page">3</button>
+                <button class="btn-page">4</button>
+                <button class="btn-page">5</button>
+                <span class="dots">...</span>
+                <button class="btn-page">99</button>
+              </div>
+              <button class="btn-nav right-btn">
+                <img src="../assets/images/next.png" alt="next" id="nextBtn">
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <!-- ============================================================== -->
@@ -466,7 +147,7 @@
       <!-- footer -->
       <!-- ============================================================== -->
       <footer class="footer text-center">
-        ⓒTmoney. All Rights Reserved.
+        {% include 'footer.html' %}
       </footer>
       <!-- ============================================================== -->
       <!-- End footer -->
@@ -494,6 +175,9 @@
   <script src="../dist/js/sidebarmenu.js"></script>
   <!--Custom JavaScript -->
   <script src="../dist/js/custom.min.js"></script>
+  <script src="../dist/js/axios.js"></script>
+  <script src="../dist/js/header.js"></script>
+  <script src="../dist/js/departure-arrival.js"></script>
 </body>
 
 </html>
