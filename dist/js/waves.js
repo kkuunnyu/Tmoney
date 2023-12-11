@@ -14,7 +14,7 @@
     return (
       (e = o.documentElement),
       "undefined" != typeof t.getBoundingClientRect &&
-        (i = t.getBoundingClientRect()),
+      (i = t.getBoundingClientRect()),
       (a = n(o)),
       {
         top: i.top + a.pageYOffset - e.clientTop,
@@ -52,11 +52,11 @@
     var n = o(e);
     null !== n &&
       (c.show(e, n),
-      "ontouchstart" in t &&
+        "ontouchstart" in t &&
         (n.addEventListener("touchend", c.hide, !1),
-        n.addEventListener("touchcancel", c.hide, !1)),
-      n.addEventListener("mouseup", c.hide, !1),
-      n.addEventListener("mouseleave", c.hide, !1));
+          n.addEventListener("touchcancel", c.hide, !1)),
+        n.addEventListener("mouseup", c.hide, !1),
+        n.addEventListener("mouseleave", c.hide, !1));
   }
   var s = s || {},
     u = document.querySelectorAll.bind(document),
@@ -170,10 +170,10 @@
           "touchstart" === t.type
             ? (d.touches += 1)
             : "touchend" === t.type || "touchcancel" === t.type
-            ? setTimeout(function () {
+              ? setTimeout(function () {
                 d.touches > 0 && (d.touches -= 1);
               }, 500)
-            : "mousedown" === t.type && d.touches > 0 && (e = !1),
+              : "mousedown" === t.type && d.touches > 0 && (e = !1),
           e
         );
       },
@@ -186,7 +186,7 @@
       "duration" in e && (c.duration = e.duration),
       c.wrapInput(u(".waves-effect")),
       "ontouchstart" in t &&
-        document.body.addEventListener("touchstart", r, !1),
+      document.body.addEventListener("touchstart", r, !1),
       document.body.addEventListener("mousedown", r, !1);
   }),
     (s.attach = function (e) {
